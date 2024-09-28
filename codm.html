@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>別墅檢視大師下載</title>
+    <style>
+        .video-container {
+            margin-bottom: 20px;
+        }
+        video {
+            width: 600px;
+        }
+        .video-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            background-color: #333;
+            padding: 10px;
+            color: white;
+        }
+        .control-button {
+            cursor: pointer;
+            margin: 0 5px;
+            background-color: #555;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            color: white;
+        }
+        .control-button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 多个视频容器 -->
+    <h3>HDR-爆裂塗鴉</h3>
+    <div class="video-container">
+        <video data-id="1">
+            <source src="HDR.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>M4-萬象天網</h3>
+    <div class="video-container">
+        <video data-id="2">
+            <source src="M4.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>Bruen MK9</h3>
+    <div class="video-container">
+        <video data-id="3">
+            <source src="MK9.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>M13-超導晨星</h3>
+    <div class="video-container">
+        <video data-id="4">
+            <source src="M13.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+    
+    <h3>Switchblade X9</h3>
+    <div class="video-container">
+        <video data-id="5">
+            <source src="X9.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>Fennec</h3>
+    <div class="video-container">
+        <video data-id="6">
+            <source src="FENNEC.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>HVK-30</h3>
+    <div class="video-container">
+        <video data-id="7">
+            <source src="HVK.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>DL Q33-惡靈召喚</h3>
+    <div class="video-container">
+        <video data-id="8">
+            <source src="DLQ33-惡靈.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>CX-9-希爾芙</h3>
+    <div class="video-container">
+        <video data-id="9">
+            <source src="CX9.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>Maddox</h3>
+    <div class="video-container">
+        <video data-id="10">
+            <source src="MADDOX.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>DL Q33 預言世界</h3>
+    <div class="video-container">
+        <video data-id="11">
+            <source src="DLQ33-預言.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>RUS-79U</h3>
+    <div class="video-container">
+        <video data-id="12">
+            <source src="RUS79U.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>SPR-208</h3>
+    <div class="video-container">
+        <video data-id="13">
+            <source src="SP208.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>DL Q33-乙太水晶</h3>
+    <div class="video-container">
+        <video data-id="14">
+            <source src="DLQ33-乙太.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <h3>Chicom</h3>
+    <div class="video-container">
+        <video data-id="15">
+            <source src="CHICOM.mp4" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <div class="video-container">
+        <video data-id="16">
+            <source src="" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <div class="video-container">
+        <video data-id="17">
+            <source src="" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <div class="video-container">
+        <video data-id="18">
+            <source src="" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <div class="video-container">
+        <video data-id="19">
+            <source src="" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+
+    <div class="video-container">
+        <video data-id="20">
+            <source src="" type="video/mp4">
+            無法下載
+        </video>
+    </div>
+    <script>
+        // 获取所有视频元素
+        const videos = document.querySelectorAll('video');
+
+        // 为每个视频添加控件
+        videos.forEach((video, index) => {
+            const videoContainer = video.parentElement;
+
+            // 创建控制面板
+            const controls = document.createElement('div');
+            controls.classList.add('video-controls');
+
+            // 创建播放/暂停按钮
+            const playPauseBtn = document.createElement('button');
+            playPauseBtn.classList.add('control-button');
+            playPauseBtn.textContent = '播放';
+
+            // 创建播放速度按钮
+            const speedBtn = document.createElement('button');
+            speedBtn.classList.add('control-button');
+            speedBtn.textContent = '速度 x1';
+
+            // 创建下载按钮
+            const downloadBtn = document.createElement('button');
+            downloadBtn.classList.add('control-button');
+            downloadBtn.textContent = '下載';
+
+            // 添加按钮到控件面板
+            controls.appendChild(playPauseBtn);
+            controls.appendChild(speedBtn);
+            controls.appendChild(downloadBtn);
+            videoContainer.appendChild(controls);
+
+            // 播放/暂停逻辑
+            playPauseBtn.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                    playPauseBtn.textContent = '暫停';
+                } else {
+                    video.pause();
+                    playPauseBtn.textContent = '播放';
+                }
+            });
+
+            // 播放速度逻辑
+            let playbackRate = 1;
+            speedBtn.addEventListener('click', () => {
+                playbackRate = playbackRate === 1 ? 1.5 : (playbackRate === 1.5 ? 2 : 1);
+                video.playbackRate = playbackRate;
+                speedBtn.textContent = `速度 x${playbackRate}`;
+            });
+
+            // 下载按钮逻辑
+            downloadBtn.addEventListener('click', () => {
+                const link = document.createElement('a');
+                link.href = video.querySelector('source').src;
+                link.download = `video${index + 1}.mp4`;  // 动态生成下载文件名
+                link.click();
+            });
+        });
+    </script>
+
+</body>
+</html>
