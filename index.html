@@ -96,6 +96,18 @@ document.addEventListener('keydown', function (event) {
 document.addEventListener('contextmenu', function (event) {
   event.preventDefault();
 });
+    // 禁用 F12 和 Ctrl+Shift+I (開發者工具)
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
+    event.preventDefault();
+  }
+});
+
+// 禁用右鍵點擊
+document.addEventListener('contextmenu', function (event) {
+  event.preventDefault();
+});
+
 
 </script>
         <h1>小工具</h1>
