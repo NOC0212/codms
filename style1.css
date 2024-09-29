@@ -1,0 +1,78 @@
+/* 整體頁面佈局 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 標題樣式 */
+h1, h2, h3 {
+  color: #000000;  /* 將綠色改成黑色 */
+  margin-bottom: 10px;
+}
+
+/* 分隔線樣式 */
+hr {
+  border: 1px solid #ddd;
+  width: 80%;
+}
+
+/* 圖片樣式 */
+img {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 鏈接樣式 */
+a {
+  text-decoration: none;
+  color: #2196F3;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 密碼輸入區域 */
+input[type="password"] {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #000000;  /* 將綠色改成黑色 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333333;  /* 改成更深的黑色 */
+}
+
+/* 隱藏內容樣式 */
+#hiddenContent {
+  display: none;
+  margin-top: 20px;
+  background-color: #e7f3fe;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #b3e5fc;
+}
+
+/* 錯誤訊息樣式 */
+.error {
+  color: red;
+  margin-top: 10px;
+}
